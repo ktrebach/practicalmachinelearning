@@ -44,21 +44,21 @@ We will now look for very highly correlated variables.
 
 
 
-We observe that 22 pairs have very high correlation, but it is too difficult to pick which ones to eliminate and it wouldn't be that many to eliminate anyway.
+We observe that 22 pairs have very high correlation (above 90%), but since it is  difficult to pick which ones to eliminate, we decide to build a predictive model using the variables we have left. If the accuracy is low, we will explore other methods.
 
-So, we are left with 53 variables with which to build our predictive model.
+We are left with 53 variables with which to build our predictive model.
 
 #Predictive Model and Testing
 
 Per wikipedia, Random forests ... are an ensemble learning method for classification, regression and other tasks, that operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees. Given the relatively large number of variables that we are using to build our model and that we are aiming to make classifications, I have chosen the random forest method.  
 
-In order to estimate the out of sample error estimate, a cross validation data set is established. 
+In order to  assess how the results of the random forest method will generalize to an independent data set, a cross validation data set is established. 
 
 
 
 Here are the dimensions of the datasets: training2:  13737, 54 and validation: 5885, 54.
  
-Given the computational expense of such a large dataset, i will further subset the training2 dataset into a smaller training set (25% of the data) to build the Random Forest model.  The results of the final model call and out of sample error estimate (OOB) are shown below:
+Given the computational expense of such a large dataset (training2), i will further subset the training2 dataset into a smaller training set (25% of the data) to build the Random Forest model.  The results of the final model call and out of sample error estimate (OOB) are shown below:
 
 
 
