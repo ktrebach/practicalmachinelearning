@@ -131,7 +131,7 @@ highcorvar <- which(M > 0.9,arr.ind=TRUE) # which pairs have high correlation
 
 ```
 
-We observe that `r dim(highcorvar)[1]` pairs have very high correlation (above 90%), but since it is  difficult to pick which ones to eliminate, we decide to build a predictive model using the variables we have left. If the accuracy is low, we will explore other methods.
+We observe that `r dim(highcorvar)[1]` pairs have very high correlation (above 90%), but since it is  difficult to pick which ones to eliminate, we decide to build a predictive model using all the variables, including those with high correlation. If the accuracy is low, we will explore other methods.
 
 We are left with `r dim(training)[2]-1` variables with which to build our predictive model.
 
