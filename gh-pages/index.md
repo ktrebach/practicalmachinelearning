@@ -44,7 +44,7 @@ We will now look for very highly correlated variables.
 
 
 
-We observe that 22 pairs have very high correlation (above 90%), but since it is  difficult to pick which ones to eliminate, we decide to build a predictive model using the variables we have left. If the accuracy is low, we will explore other methods.
+We observe that 22 pairs have very high correlation (above 90%), but since it is  difficult to pick which ones to eliminate, we decide to build a predictive model using all the variables, including those with high correlation. If the accuracy is low, we will explore other methods.
 
 We are left with 53 variables with which to build our predictive model.
 
